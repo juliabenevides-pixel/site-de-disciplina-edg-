@@ -12,7 +12,7 @@
             max-width: 900px;
             margin: 0 auto;
             border: Spx solid #500363;
-            padding: 26px;
+            padding: 36px;
         }
         main{ 
             background-color: rgb(129, 229, 14);
@@ -22,8 +22,8 @@
             display: flex;
         }
         img{ 
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
@@ -53,6 +53,8 @@ botao.addEventListener("click",botaoclicado)
 
 function botaoclicado (){
     console.log("fui clicado");
+    let text = botao.querySelector("span");
+    texto.textcontent++;
 }
 </script>
 
