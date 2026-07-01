@@ -48,7 +48,9 @@
 
 <script>
 const botoes = document.querySelector("button");
-botao.addEventListener("click",botaoClicado);
+botoes.forEach(fuction(botaoClicado){ 
+    botao.addEventListener("click", botaoClicado);
+]);
 
 function botaoClicado () {
     console.log("fui clicado");
@@ -56,5 +58,6 @@ function botaoClicado () {
     texto.textContent++;
 }
 </script>
+
 
 </html> 
