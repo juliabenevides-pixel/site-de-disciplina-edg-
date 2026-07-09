@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>michael site</title>
+    <link rel="styleheet" href="style.css">
+
     <style>
         header{ 
             background-color: rgb(185, 180, 185);
@@ -58,22 +60,5 @@
 
     </main>
 </body>
-
-
-const botoes = document.querySelectorAll("button");
-botoes.forEach(function(botao){ 
-    botao.addEventListener("click", botaoClicado);
-});
-
-function botaoClicado (event) {
-    console.log("fui clicado"); 
-     // event.currentTarget refere-se ao botão exato que recebeu o clique
-    let texto = event.currentTarget.querySelector("span");
-    texto.textContent++;
-}
-    
-
-
-
-
+<script src="script.js"></script>
 </html> 
